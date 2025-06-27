@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cnidários</title>
+        <style>
+         
+
+    #inicio img {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20%;
+        object-fit: cover;
+        border: 3px solid #b0c4de;
+        transition: transform 0.4s ease;
+        margin: 0 auto
+    }
+
+    #inicio img:hover {
+        transform: scale(1.05);
+    }
+
+    @keyframes fadeInBody {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    header {
+        background-color: #4682b4;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-30px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+
+    nav {
+        background-color: #b0c4de;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        color: #1b2a41;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #005f8d;
+    }
+
+    section {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        animation: fadeInSection 1s ease-in-out;
+    }
+
+    @keyframes fadeInSection {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+        color: #1b4f72;
+    }
+
+    footer {
+        background-color: #4682b4;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #sobre img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #b0c4de;
+        transition: transform 0.4s ease;
+    }
+
+    #sobre img:hover {
+        transform: scale(1.05);
+    }
+
+    ul {
+        list-style: square;
+        padding-left: 20px;
+    }
+
+    b {
+        color: #003f63;
+    }
+
+    .botao {
+        display: inline-block;
+        background-color: #5dade2;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        text-decoration: none;
+        margin-top: 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .botao:hover {
+        background-color: #3498db;
+        transform: scale(1.05);
+    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Descobrindo os Cnidários</h1>
+            <p>As maravilhas gelatinosas dos mares.</p>
+        </header>
+        
+        <nav>
+            <p><a href="#inicio">Inicio</a></p>
+            <p><a href="#curiosidades">Curiosidades</a></p>
+            <p><a href="#sobre">Sobre</a></p>
+        </nav>
+
+        <section id="inicio">
+
+            <h2>O que são Cnidáros ?</h2>
+            <p>São um filo de animais invertebrados, conhecidos por sua grande diversidade e por possuírem células especializadas chamadas cnidócitos ou cnidócitos (células urticantes), que são responsáveis pelo mecanismo de defesa e captura de presas. Esse filo inclui organismos marinhos como <b>medusas, águas-vivas, anêmonas-do-mar e corais.</b></p>
+
+            <h2>Características Gerais</h2>
+            <p><b>Simplicidade Corporal:</b> Os cnidários têm um corpo relativamente simples, com simetria radial. Isso significa que seu corpo pode ser dividido em várias partes simétricas em torno de um ponto central.</p>
+            <p><b>Estrutura:</b> O corpo dos cnidários é formado por duas camadas de células: uma camada externa chamada epiderme e uma camada interna chamada <i>gastroderme</i>. Entre essas camadas existe uma substância gelatinosa chamada <i>mesogleia.</i></p>
+            <p><b>Células Cnidócitas:</b> As células especializadas chamadas <i>cnidócitos</i> contêm estruturas chamadas nematocistos, que são cápsulas contendo filamentos urticantes. Quando um cnidário entra em contato com uma presa ou ameaça, os <i>nematocistos</i> são disparados, paralisando ou capturando a presa.</p>
+            <p><b>Sistema Digestivo:</b> O sistema digestivo dos nidários é incompleto, ou seja, eles possuem apenas uma abertura que serve tanto para a entrada de alimentos quanto para a saída de resíduos. Essa abertura está localizada em uma cavidade chamada cavidade <i>gastrovascular.</i></p>
+            <p><b>Reprodução:</b> A reprodução pode ser <i>assexuada</i> (por brotamento ou divisão) ou <i>sexuada</i> (com a produção de gametas). Muitas espécies têm um ciclo de vida alternado entre duas formas: a <i>pólipo</i> (geralmente sedentária) e a <i>medusa</i> (livre-natante).</p>
+        
+            <h2>Classificação</h2>
+            <p><b>Classe Hydrozoa (hidrozoários):</b> é composta por organismos aquáticos que vivem tanto em água doce quanto em ambientes marinhos. Esses animais podem ser solitários ou formar colônias complexas, com diferentes formas corporais e modos de vida. Em geral, apresentam duas fases no ciclo de vida: a fase de pólipo, que é fixa e com formato cilíndrico, e a fase de medusa, que é livre-natante e geralmente menor, possuindo uma estrutura chamada velum, que auxilia na natação. A reprodução pode ser assexuada na fase de pólipo e sexuada na fase de medusa, caracterizando um ciclo com alternância de gerações (metagênese).
+
+                Entre os principais exemplos de hidrozoários, destaca-se a hidra, que vive em água doce e apresenta apenas a fase de pólipo. A Obelia, por sua vez, é um hidrozoário marinho que alterna entre as fases de pólipo e medusa. A caravela-portuguesa (Physalia physalis) é uma colônia flutuante composta por pólipos especializados, e o Gonionemus é uma pequena medusa marinha de movimentos ativos.</p>
+            <img src="{% static 'hidra.jpg'%}" alt="representação de hidra">
+            <p><b>Classe Scyphozoa (escifozoários):</b>é conhecida por incluir as chamadas águas-vivas verdadeiras. Esses animais são exclusivamente marinhos e se destacam pela predominância da fase de medusa em seu ciclo de vida. As medusas dos escifozoários são geralmente grandes, com corpo gelatinoso e formato de guarda-chuva, além de apresentarem tentáculos com células urticantes utilizadas para captura de presas e defesa. Diferente dos hidrozoários, as medusas desse grupo não possuem velum, o que as distingue estruturalmente. A fase de pólipo, quando existe, é muito reduzida, de curta duração e pouco desenvolvida. A reprodução ocorre de forma sexuada na fase de medusa, e o pólipo, quando presente, pode se reproduzir assexuadamente originando novas medusas. Um exemplo comum de escifozoário é a Aurelia aurita, conhecida como água-viva-da-lua. </p>
+            <img src="{% static 'lula.jpg'%}" alt="representação de água-viva">
+            <p><b>Classe Anthozoa (antozoários):</b>inclui organismos como os corais e as anêmonas-do-mar. Os antozoários são exclusivamente marinhos e vivem predominantemente na forma de pólipo, sendo que a fase medusa está ausente ou muito rudimentar nesse grupo. Esses animais possuem corpo cilíndrico, com tentáculos ao redor da boca, e podem viver de forma solitária, como as anêmonas, ou em colônias, como os corais. Muitos corais secretam esqueletos calcários que, ao longo do tempo, contribuem para a formação de grandes estruturas conhecidas como recifes de corais. Esses recifes são ecossistemas marinhos extremamente ricos em biodiversidade e desempenham um papel ecológico fundamental. Além disso, os corais geralmente mantêm uma relação simbiótica com algas microscópicas chamadas zooxantelas, que auxiliam na nutrição do animal por meio da fotossíntese. </p>
+            <img src="{% static 'corais.png'%}" alt="representação de corais">
+            <p><b>Classe Cubozoa (cubozóides):</b> é conhecida por incluir as águas-vivas cuboides, também chamadas de medusas-cubo, devido ao formato aproximadamente cúbico de seu corpo. Esses animais são exclusivamente marinhos e apresentam a fase de medusa como predominante em seu ciclo de vida. As medusas cubozoárias possuem grande capacidade de natação e são equipadas com olhos simples e compostos, localizados em estruturas chamadas ropálios, que lhes conferem certa orientação visual. São também conhecidas por seu veneno extremamente potente, capaz de causar sérias reações em seres humanos e, em alguns casos, até levar à morte. Uma das espécies mais perigosas é a Chironex fleckeri, encontrada na região do Indo-Pacífico. A fase de pólipo é muito reduzida e pouco duradoura, sendo apenas uma etapa transitória no desenvolvimento. Esses animais representam um grupo mais avançado entre os cnidários, com comportamentos de natação mais ativos e maior sensibilidade ao ambiente.            </p>
+            <img src="{% static 'vespa-do-mar.jpg'%}" alt="representação de medusas-cubo">
+
+            <h2>Habitat e Distribuição</h2>
+            <p>Os cnidários são predominantes no ambiente marinho, embora existam algumas espécies de água doce, como a hidra. Eles podem ser encontrados em diversos ecossistemas marinhos, desde águas rasas e recifes de corais até as profundezas oceânicas. Alguns cnidários, como as hidras, também podem viver em lagos e rios.</p>
+        
+            <h2>Importância Ecológica</h2>
+            <p><b>Ecossistema Marinho:</b> corais, que são cnidários, são essenciais para a formação de recifes de corais, que são habitats ricos em biodiversidade e fornecem alimentos e abrigo para diversas espécies marinhas.</p>
+            <p><b>Cadeia Alimentar:</b> Os cnidários desempenham um papel importante na cadeia alimentar marinha, como predadores de plâncton e outros pequenos organismos.</p>
+            <p><b>Simbiose:</b> Muitos cnidários, especialmente os corais, formam relações simbióticas com algas do gênero Symbiodinium (zooxantelas), que realizam fotossíntese e fornecem nutrientes para o cnidário em troca de proteção.</p>
+        
+        </section>
+
+        <section id="curiosidades">
+
+           <h2>Curiosidades</h2>
+           <ul>
+            <li>A água-viva é um dos animais mais antigos da Terra, com mais de 500 milhões de anos de existência.</li>
+            <li>Algumas espécies de corais podem formar recifes que são maiores que algumas montanhas, como a Grande Barreira de Coral na Austrália, que é visível do espaço.</li>
+           </ul>
+
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <img src="{% static 'rena.jpg'%}" alt="Foto de Renara Soares">
+            <p>Este site foi criado por: Renara Soares, aluna do Tecnico Integrado em Informática do campus Maranguape, pertencente a turma S5T1.</p>
+        </section>
+        <footer>
+            <p>&copy;2025-Renara Soares</p>
+        </footer>
+
+    </body>
+</html>
